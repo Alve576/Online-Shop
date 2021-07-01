@@ -1,0 +1,49 @@
+<%- include("pertials/header.ejs") %>
+<link rel="stylesheet" href="index.css">
+
+
+<div class="img-cont container">
+   <div class="row"> 
+    <img class="img-slider img-fluid active" src="https://scontent.fdac92-1.fna.fbcdn.net/v/t1.6435-9/p843x403/199027457_1708050066053535_5950954480837592804_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=730e14&_nc_ohc=P2ofx740cFcAX_SKWop&_nc_ht=scontent.fdac92-1.fna&tp=6&oh=f19f85c0d2626b3377cf424be62a1755&oe=60CCAC34" alt="">
+    <img class="img-slider img-fluid" src="https://727512.smushcdn.com/2172971/wp-content/uploads/2021/06/Raglan.jpg?lossy=1&strip=1&webp=1" alt="">
+    <img class="img-slider img-fluid" src="https://727512.smushcdn.com/2172971/wp-content/uploads/2021/06/546-Black.jpg?lossy=1&strip=1&webp=1" alt="">
+    <img class="img-slider img-fluid" src="https://scontent.fdac92-1.fna.fbcdn.net/v/t1.6435-9/201464814_1709346535923888_7009713062525703558_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=YQukKFkF3Y0AX-ivh1q&_nc_ht=scontent.fdac92-1.fna&oh=e033cc91dd0c050462ea130672b6cc69&oe=60CE5D8E" alt="">
+   </div>
+</div>
+
+ 
+ 
+<div class="container text-center">
+  <h2 display-2>T-Shirt Corner</h2>
+  <div class="row gy-5">
+
+  <% tSharts.forEach(function(tShart){ %>
+    <div class="col-md-3 col-sm-6">
+  <div class="ui card">
+    <div class="image">
+      <img src="<%= tShart.image %>">
+    </div>
+    <div class="content">
+      <a class="header"><%= tShart.name %></a>
+        <span class="date">tk : <%= tShart.price %></span>
+    </div>
+    <div class="extra content">
+      <a>
+        <button href="/index/<%= tShart._id %>" class="btn btn-dark">Order</button>
+      </a>
+    </div>
+  </div>
+</div>
+  <% }) %>
+</div>
+<a href="">See All...</a> 
+</div>
+ 
+
+
+
+
+<script src="index.js"></script>
+
+
+<%- include ("pertials/footer.ejs") %>

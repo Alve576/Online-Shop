@@ -1,0 +1,29 @@
+<%- include ("pertials/header.ejs") %>
+
+
+
+<div class="container">
+    
+   <div class="row">
+       <div class="col-md-6">
+       <img class="img-thumbnail" src="<%= product.image %>">
+
+       </div>
+       <div class="col-md-6">
+
+           <h1>Plain T-Shirt</h1>
+           <h2><%= product.name%></h2>
+           <p class="text-danger">Limited-Time Special</p>
+           <p>Reg. BDT 500</p>
+           <p class="text-danger">Sale BDT <%= product.price %>(38% off) Sale ends 6/20/21</p>
+           <p class="text-danger">30% off Levi's Details</p>
+           <button class="btn btn-danger">Add To Beg</button>
+            
+            <a href='/index/<%= product._id %>/comment' class="btn btn-primary">Add A Comment</a>
+           <% product.comments.forEach(function(comment){ %>
+            <p><%= comment.author.username%> - <%= comment.text%></p>
+           <% }) %>
+            
+       </div>
+   </div>
+</div>

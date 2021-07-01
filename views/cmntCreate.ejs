@@ -1,0 +1,35 @@
+<%- include ("pertials/header.ejs") %>
+<link rel="stylesheet" href="index.css">
+
+
+
+
+
+<form action="/index/<%= product._id %>" method="POST">
+    <div class="form-group"></div>
+      <label>Comment</label></div>
+      <input type="text" name="comment[text]" class="form-control"  placeholder="Comment">
+    </div>
+    <div class="form-group"></div>
+      <label>Your Name</label></div>
+      <input type="text"  name="comment[author]" class="form-control" value="comment.author.username"></div>
+    </div></div>
+    </div>
+    
+    
+    <button class="btn btn-primary">Submit</button>
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include ("pertials/footer.ejs") %>
