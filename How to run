@@ -1,0 +1,12 @@
+1. Open the file and copy the file path.
+2. In your terminal write: "cd theFilePath" and hit enter.
+3.And write node app.js.
+4. Now go to your browser and open http://localhost:3000/index.
+5.Now the local site is runing!
+6.There you can see register. You have to register first.
+7. If you are registered you should see a 'add' section in the nevbar. You can add a product with name, image and price. 
+8. Once you add, the product will be added to the index page.
+9. You can see the ordar formet there.
+10. There are some authentications. Like if you once registered and if any how you have to run your server again you have to log in with your registered username and password.If you are not login you will not abel to add or ordar any product.
+
+THATS IT!! GO AND CHEACK THAT.
